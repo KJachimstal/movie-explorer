@@ -1,9 +1,13 @@
 import { Link } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext';
 
+/* -------------------------------------------------------------------------- */
+/*                               Not Found Page                               */
+/* -------------------------------------------------------------------------- */
 export default function NotFoundPage() {
   const { theme } = useTheme();
 
+  /* --------------------------------- Render --------------------------------- */
   return (
     <div className={`min-h-screen flex flex-col justify-center items-center px-6 bg-white dark:bg-zinc-900 text-gray-800 dark:text-gray-100 ${theme}`}>
       <h1 className="text-6xl font-bold text-blue-600 dark:text-yellow-400 mb-4">404</h1>
