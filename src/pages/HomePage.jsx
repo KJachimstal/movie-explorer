@@ -55,14 +55,14 @@ export default function HomePage() {
 
       <main>
         {isLoading && (
-          <div className='h-[950px] flex justify-center items-center'>
+          <div className='lg:h-[950px] flex justify-center items-center'>
             <CircleLoader />
           </div>
         )}
 
         {!isLoading && (
           <div className="flex justify-center">
-            <div className="w-full max-w-[1400px] h-[950px] px-4 perspective-[1000px]">
+            <div className="w-full max-w-[1400px] lg:h-[950px] px-4 perspective-[1000px]">
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
                 {data?.Search?.map((movie, index) => (
                   <MovieCard
