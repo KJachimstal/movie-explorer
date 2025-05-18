@@ -18,19 +18,19 @@ export default function FavoritesPage() {
   return (
     <div className={`min-h-screen bg-white dark:bg-zinc-900 text-gray-900 dark:text-white transition-colors duration-300 ${theme}`}>
       <header className="py-8 text-center">
-        <h1 className="text-3xl font-bold text-gray-800 dark:text-white">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white">
           My liblary
         </h1>
+        <div className="mt-6 flex justify-center items-center gap-4 flex-wrap">
+          <SearchBar value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search you liblary..." />
+          <ThemeToggle />
+        </div>
         <Link
           to="/"
           className="inline-flex items-center gap-2 px-5 py-2.5 mt-4 rounded-lg bg-blue-600 text-white dark:bg-yellow-500 dark:text-zinc-900 font-medium text-sm shadow-md hover:shadow-lg transition-all duration-200 hover:bg-blue-700 dark:hover:bg-yellow-600"
         >
           ← Go back
         </Link>
-        <div className="mt-6 flex justify-center items-center gap-4 flex-wrap">
-          <SearchBar value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search you liblary..." />
-          <ThemeToggle />
-        </div>
       </header>
 
       <main className="flex justify-center">
