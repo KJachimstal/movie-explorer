@@ -47,7 +47,7 @@ export default function HomePage() {
         </div>
         <Link
           to="/favorites"
-          className="inline-block mt-4 text-sm text-blue-600 dark:text-yellow-400 hover:underline"
+          className="inline-flex items-center gap-2 px-5 py-2.5 mt-4 rounded-lg bg-blue-600 text-white dark:bg-yellow-500 dark:text-zinc-900 font-medium text-sm shadow-md hover:shadow-lg transition-all duration-200 hover:bg-blue-700 dark:hover:bg-yellow-600"
         >
           To favorites
         </Link>
