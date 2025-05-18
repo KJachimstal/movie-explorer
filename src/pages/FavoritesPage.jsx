@@ -37,7 +37,7 @@ export default function FavoritesPage() {
         <div className="w-full max-w-[1400px] px-4">
           {favorites.length === 0 ? (
             <p className="text-center text-gray-500 dark:text-gray-400 py-10">
-              Brak ulubionych filmów.
+              Library is empty
             </p>
           ) : (
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
