@@ -50,7 +50,7 @@ export default function MovieCard({ movie, isFavorite, toggleFavorite, index = 0
               : 'bg-blue-500 hover:bg-blue-600'
           }`}
         >
-          {isFavorite ? 'Favorites' : 'Add to favorites'}
+          {isFavorite ? 'Remove from favorites' : 'Add to favorites'}
         </button>
       </div>
     </motion.div>
